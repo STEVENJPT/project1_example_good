@@ -1,7 +1,7 @@
 # project1_example_good
 Relevant files are:
-- Final_Proyect
-- Presentation_Final
+- Proyect_Final
+- Final_Presentation
 - Proyect_Summary
 
 
