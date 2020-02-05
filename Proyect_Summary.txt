@@ -1,0 +1,55 @@
+The Efficiency of Central Bank Communication
+
+TEAM MEMBERS: 
+- Steven Palacio
+- Joaquín Caicedo 
+- Manuel Aguilar 
+- Victor Cobos 
+
+Hypothesis: A central bank’s communication should be consistent with the level of interest rates in the economy. Furthermore, it should also help markets anticipate future changes to such interest rates. 
+
+Key questions:
+
+- Is the central bank communication consistent with its policy stance
+- Do policy statements allow us to infer enough information about it?
+- Is analyzing words (counting words) in those statements of any help?
+- Can statements provide data not only of present, but also future rates?
+
+Why should we care?
+
+- Inflation is a regressive tax, and can have damaging consequences
+- Efficient communication helps CBs keep inflation expectations of check
+- This also allows economic agents to take better decisions
+
+Data needs: 
+
+- Access to Mexico central bank’s (Banxico) statements
+- Data on interest rates and foreign exchange (peso)
+- Statements are available in Banxico’s website…but just in PDF!
+- Data, in contrast, are provided through Banxico’s free API 
+
+Data Processing: 
+
+- We use PDFMiner to read and convert statements into text files that can be manipulated 
+- Once converted into text and split by words, we clean the data, removing unnecessary words 
+- We then use word counting to seek for key frases (inflation, growth, risks, volatility, etc) in the statement
+- We convert the obtained information into a DataFrame
+- Finally, using Banxico's API we request data on interest and FX levels teh day of the statement and the day after, and create a DF
+- This allows us to compare interest rates and interest rate changes to central bank communication and test their consistency 
+
+Findings: 
+
+- There is a strong correlation between Banxico's communication (word counts) and interest rate levels
+- There is also a strong correlation between communication and future changes in interest rates 
+
+Conclusions
+- Inflation is damaging in many ways, not least by acting as a regressive tax 
+- An efficient central bank communication helps contain inflation
+- A central bank that reacts predictably to economic data should be more efficient
+- Data analytics provide tools to test such efficiency 
+- We find that analyzing words used in CBs statements help predict rates…
+…and not only current rates, but future rates too!
+- This is important as efforts to communicate clearly seem to pay off…at least if you know where to search for
+- Correctly interpreting a CB’s communication can help improve the economy’s functioning
+
+
