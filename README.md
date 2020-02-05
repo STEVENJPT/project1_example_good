@@ -1,5 +1,10 @@
 # project1_example_good
-Example of shared repo for project
+Relevant files are:
+- Final_Proyect
+- Presentation_Final
+- Proyect_Summary
+
+
 
 # Banxico real-time monetary policy analysis
 
